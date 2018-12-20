@@ -17,3 +17,14 @@
 ```
 % ansible-playbook playbooks/main.yml
 ```
+
+### keep changes local
+
+ignore changes to previously added file
+```
+git update-index --assume-unchanged [<file> ...]
+```
+revert
+```
+git update-index --no-assume-unchanged [<file> ...]
+```
