@@ -1,0 +1,4 @@
+---
+- hosts: rand
+  roles:
+  - some_role
