@@ -1,8 +1,11 @@
 
-* edit hosts
-* edit playbooks/main.yml
+## Usage
+
+* edit `hosts`
+* edit `playbooks/main.yml`
 * symlink roles as needed.
 ```
+# example
 % cd roles
 % ln -s ../../arch_basic_server/
 ```
