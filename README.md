@@ -2,7 +2,7 @@
 ## Usage
 
 * edit `hosts`
-* edit `playbooks/main.yml`
+* edit `playbooks/play.yml`
 * symlink roles as needed.
 ```
 # example
@@ -15,7 +15,7 @@
 ```
 * run ansible plabook as needed
 ```
-% ansible-playbook playbooks/main.yml
+% ansible-playbook playbooks/play.yml
 ```
 
 ### keep changes local
