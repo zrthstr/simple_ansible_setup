@@ -1,18 +1,7 @@
 
 [rand]
-1.2.3.4
-1.2.3.5
-1.2.3.6
+51.15.107.240
 
 [rand:vars]
-ansible_ssh_user=you
+ansible_ssh_user=zrth
 distri=arch
-
-
-[other]
-2.2.3.4
-2.2.3.6
-
-[other:vars]
-ansible_ssh_user=you
-distri=ubuntu
