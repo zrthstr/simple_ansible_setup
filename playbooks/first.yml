@@ -1,0 +1,11 @@
+- hosts: all
+  gather_facts: False
+  
+  tasks:
+  - name: install python if needed and distri == 'arch'
+    raw: test -e /usr/bin/python || (pacman -Syu --noconfirm ;  pacman -S python --noconfirm)
+    when: distri == 'arch'
+
+  - name: install python if needed and distri == 'ubuntu' or distri == 'Ubuntu' 
+    raw: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
+    when: distri == 'Debian' or distri == 'Ubuntu'
