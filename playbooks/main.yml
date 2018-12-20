@@ -1,4 +1,4 @@
 ---
 - hosts: rand
   roles:
-  - some_role
+  - arch_basic_server
